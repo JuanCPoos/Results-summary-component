@@ -1,0 +1,117 @@
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+$light-red: hsl(0, 100%, 67%);
+$light-red-hsl: hsla(0, 100%, 67%, 0.449);
+$orange-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    .box {        
+        margin: 0 auto;
+        border-radius: 30px;
+        border: transparent;
+        box-shadow: 1px 1px 10px hsl(221, 100%, 96%);        
+        width: 620px;
+        height: 400px;
+        
+        .row{
+            height: 100%;
+        }
+        .col-izquierda {            
+            background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            padding: 20px 40px;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            
+
+            .circulo {
+                width: 170px;                
+                height: 170px;
+                border-radius: 50%;
+                background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+                display: flex;         
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                padding: 15px;
+                h1{
+                    font-size: 4rem;
+                    margin: 0;
+                    
+                }
+                p {
+                    font-size: 30px;
+                    margin: 0;                    
+                    color: rgba(203, 152, 9, 0.957)
+                }
+                
+            }
+        }
+        .col-derecha{            
+            height: 100%;
+            padding: 20px 40px;
+            .sumarys{
+                justify-content: space-around;
+                .reaction{
+                    background-color: $light-red-hsl;
+                    span{
+                        color: $light-red;
+                    }
+                    p{
+    
+                    }                
+                }
+                .memory{
+    
+                    span{
+                        color: $orange-yellow
+                    }
+                    p{
+    
+                    }                
+                }
+                .verbal{
+    
+                    span{
+                        color: $green-teal
+                    }
+                    p{
+    
+                    }                
+                }
+                .visual{
+    
+                    span{
+                        color: $cobalt-blue
+                    }
+                    p{
+    
+                    }                
+                }
+            }
+            h1{
+                font-size: 20px;
+                color: #252831;
+            }
+            bottom{
+                background-color: $dark-gray-blue;
+                color: white;
+                padding: 5px 50px;
+                border-radius: 30px;
+            }
+            
+        }
+    }
+
+}

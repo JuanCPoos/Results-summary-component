@@ -1,0 +1,82 @@
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+main .box {
+  margin: 0 auto;
+  border-radius: 30px;
+  border: transparent;
+  box-shadow: 1px 1px 10px hsl(221, 100%, 96%);
+  width: 620px;
+  height: 400px;
+}
+main .box .row {
+  height: 100%;
+}
+main .box .col-izquierda {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 20px 40px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+main .box .col-izquierda .circulo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+main .box .col-izquierda .circulo h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+main .box .col-izquierda .circulo p {
+  font-size: 30px;
+  margin: 0;
+  color: rgba(203, 152, 9, 0.957);
+}
+main .box .col-derecha {
+  height: 100%;
+  padding: 20px 40px;
+}
+main .box .col-derecha .sumarys {
+  justify-content: space-around;
+}
+main .box .col-derecha .sumarys .reaction {
+  background-color: hsla(0, 100%, 67%, 0.449);
+}
+main .box .col-derecha .sumarys .reaction span {
+  color: hsl(0, 100%, 67%);
+}
+main .box .col-derecha .sumarys .memory span {
+  color: hsl(39, 100%, 56%);
+}
+main .box .col-derecha .sumarys .verbal span {
+  color: hsl(166, 100%, 37%);
+}
+main .box .col-derecha .sumarys .visual span {
+  color: hsl(234, 85%, 45%);
+}
+main .box .col-derecha h1 {
+  font-size: 20px;
+  color: #252831;
+}
+main .box .col-derecha bottom {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 5px 50px;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
