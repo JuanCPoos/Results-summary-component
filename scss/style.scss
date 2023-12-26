@@ -62,42 +62,45 @@ main {
             height: 100%;
             padding: 20px 40px;
             .sumarys{
-                justify-content: space-around;
+                
+                              
+                p{
+                    margin-bottom: 0;
+                    width: min-content;
+                    
+                }  
+                .span{
+                    width: min-content;
+                }
                 .reaction{
+                    justify-content: space-between;
+                display: flex;
                     background-color: $light-red-hsl;
                     span{
                         color: $light-red;
                     }
-                    p{
-    
-                    }                
+                                  
                 }
                 .memory{
     
                     span{
                         color: $orange-yellow
                     }
-                    p{
-    
-                    }                
+                                 
                 }
                 .verbal{
     
                     span{
                         color: $green-teal
                     }
-                    p{
-    
-                    }                
+                                 
                 }
                 .visual{
     
                     span{
                         color: $cobalt-blue
                     }
-                    p{
-    
-                    }                
+                                  
                 }
             }
             h1{

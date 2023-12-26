@@ -50,10 +50,16 @@ main .box .col-derecha {
   height: 100%;
   padding: 20px 40px;
 }
-main .box .col-derecha .sumarys {
-  justify-content: space-around;
+main .box .col-derecha .sumarys p {
+  margin-bottom: 0;
+  width: min-content;
+}
+main .box .col-derecha .sumarys .span {
+  width: min-content;
 }
 main .box .col-derecha .sumarys .reaction {
+  justify-content: space-between;
+  display: flex;
   background-color: hsla(0, 100%, 67%, 0.449);
 }
 main .box .col-derecha .sumarys .reaction span {
