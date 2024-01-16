@@ -14,75 +14,107 @@ main .box {
   box-shadow: 1px 1px 10px hsl(221, 100%, 96%);
   width: 620px;
   height: 400px;
+  position: relative;
 }
 main .box .row {
+  display: flex;
   height: 100%;
+  position: absolute;
 }
-main .box .col-izquierda {
+main .box .row .title {
+  font-size: 20px;
+}
+main .box .row .col-izquierda {
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   padding: 20px 40px;
   color: white;
   border-radius: 20px;
   text-align: center;
+  width: 50%;
 }
-main .box .col-izquierda .circulo {
+main .box .row .col-izquierda .circulo {
   width: 170px;
   height: 170px;
   border-radius: 50%;
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: 15px;
 }
-main .box .col-izquierda .circulo h1 {
+main .box .row .col-izquierda .circulo h1 {
   font-size: 4rem;
   margin: 0;
 }
-main .box .col-izquierda .circulo p {
+main .box .row .col-izquierda .circulo p {
   font-size: 30px;
   margin: 0;
   color: rgba(203, 152, 9, 0.957);
 }
-main .box .col-derecha {
+main .box .row .col-derecha {
   height: 100%;
-  padding: 20px 40px;
-}
-main .box .col-derecha .sumarys p {
-  margin-bottom: 0;
-  width: min-content;
-}
-main .box .col-derecha .sumarys .span {
-  width: min-content;
-}
-main .box .col-derecha .sumarys .reaction {
-  justify-content: space-between;
+  padding: 20px 30px;
+  width: 50%;
   display: flex;
-  background-color: hsla(0, 100%, 67%, 0.449);
+  flex-direction: column;
+  align-items: space-around;
 }
-main .box .col-derecha .sumarys .reaction span {
+main .box .row .col-derecha .sumarys p {
+  margin-bottom: 0;
+}
+main .box .row .col-derecha .sumarys .reaction {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 7px 9px;
+  margin: 10px 0px;
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+main .box .row .col-derecha .sumarys .reaction span {
   color: hsl(0, 100%, 67%);
 }
-main .box .col-derecha .sumarys .memory span {
+main .box .row .col-derecha .sumarys .memory {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 7px 9px;
+  margin: 10px 0px;
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+main .box .row .col-derecha .sumarys .memory span {
   color: hsl(39, 100%, 56%);
 }
-main .box .col-derecha .sumarys .verbal span {
+main .box .row .col-derecha .sumarys .verbal {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 7px 9px;
+  margin: 10px 0px;
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+main .box .row .col-derecha .sumarys .verbal span {
   color: hsl(166, 100%, 37%);
 }
-main .box .col-derecha .sumarys .visual span {
+main .box .row .col-derecha .sumarys .visual {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 7px 9px;
+  margin: 10px 0px;
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+main .box .row .col-derecha .sumarys .visual span {
   color: hsl(234, 85%, 45%);
 }
-main .box .col-derecha h1 {
-  font-size: 20px;
-  color: #252831;
-}
-main .box .col-derecha bottom {
+main .box .row .col-derecha bottom {
   background-color: hsl(224, 30%, 27%);
   color: white;
   padding: 5px 50px;
   border-radius: 30px;
+  margin-top: 10px;
+  bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

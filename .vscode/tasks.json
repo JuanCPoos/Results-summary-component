@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "/home/juan/Documentos/workspace/Code Craf/challenge/results-summary-component-main",
+			"problemMatcher": [],
+			"label": "Live Preview: Ejecutar servidor"
+		}
+	]
+}
